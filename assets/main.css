@@ -1,0 +1,40 @@
+* {
+  font-family: 'Permanent Marker', cursive;
+  background-color: gainsboro;
+}
+
+.navbar {
+  background-color: salmon;
+}
+body {
+background-color: gainsboro;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  float: none;
+}
+.top {
+  margin-top: 0em;
+}
+
+.introWrapper {
+  margin-top: 5em;
+}
+
+.gButton {
+  background-color: salmon;
+}
+
+
+
+.hide {
+  display: none;
+}
+
+#questions[currentQuestion].answers:checked {
+  border: 20px solid black;
+}
