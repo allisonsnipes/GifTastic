@@ -1,18 +1,18 @@
-let queryURL = {
-  url:
-  apiKey: ZjUY0xPzP6S5TW9QVWkwsTP2dVWs2fkf;
-  limit: 20;
-}
-
-
 //event listener for all button elements on a page
-document.querySelector(".container").addEventListener("click", function(event) {
+document.querySelector("#container").addEventListener("click", function(event) {
 
-  //why do i have an .toUpperCase here?
-  if (event.target.tagName === "button".toUpperCase()) {
-    document.getElementById("textBox").val.trim();
+  //why uppercase?
+  if (event.target.tagName == "BUTTON") {
+    console.log(event);
 
+    //replaces spaces with + signs
+    var buttons = event.target.dataset.buttons.replace(' ', '+');
+
+    //constructing search query URL for button name
+    var queryURL = `https://api.giphy.com/v1/gifs/search?q="${buttons}&api_key=ZjUY0xPzP6S5TW9QVWkwsTP2dVWs2fkf`;
   }
 
-  //constructing a URL to search giphy
+  //
 });
+
+//document.getElementById("textBox").val.trim();
