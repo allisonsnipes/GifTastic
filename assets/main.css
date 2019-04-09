@@ -6,6 +6,7 @@
 .navbar {
   background-color: salmon;
 }
+
 body {
 background-color: gainsboro;
 }
@@ -21,10 +22,6 @@ background-color: gainsboro;
   margin-top: 0em;
 }
 
-.introWrapper {
-  margin-top: 5em;
-}
-
 .gButton {
   background-color: salmon;
 }
@@ -36,12 +33,4 @@ background-color: gainsboro;
 
 .searchField {
   background-color: white;
-}
-
-.hide {
-  display: none;
-}
-
-#questions[currentQuestion].answers:checked {
-  border: 20px solid black;
 }
