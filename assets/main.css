@@ -34,6 +34,10 @@ background-color: gainsboro;
   float: right;
 }
 
+.searchField {
+  background-color: white;
+}
+
 .hide {
   display: none;
 }
