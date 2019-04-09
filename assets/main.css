@@ -1,5 +1,5 @@
 * {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Alegreya Sans', sans-serif;
   background-color: gainsboro;
 }
 
@@ -29,7 +29,10 @@ background-color: gainsboro;
   background-color: salmon;
 }
 
-
+.rightHandForm {
+  margin-left: 0em;
+  float: right;
+}
 
 .hide {
   display: none;

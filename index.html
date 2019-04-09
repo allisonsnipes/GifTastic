@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
    <!-- titles and links to css -->
-   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
   <link href="assets/main.css" rel="stylesheet" type="text/css">
   <title>GifTastic</title>
 </head>
@@ -38,18 +38,20 @@
 
       <!-- giphy column -->
       <div class="col-md-9">
-
       </div>
 
 
 
       <!-- form column -->
       <div class="col-md-4">
-        <fieldset class="">
+        <fieldset class="rightHandForm">
           <form class="searchForm">
-
+            <div class="form-group">
+              <label for="search">Search for a Giphy</label>
+              <input type="text" class="searchField" placeholder="Type here">
+            </div>
+            <button class="gButton border border-dark" type="submit">Submit</button>
           </form>
-          <button class="gButton border border-dark" type="submit">Submit</button>
         </fieldset>
       </div>
     </div>
