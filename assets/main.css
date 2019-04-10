@@ -22,8 +22,9 @@ background-color: gainsboro;
   margin-top: 0em;
 }
 
-.gButton {
+.gButton, button {
   background-color: salmon;
+  margin-top: 3em;
 }
 
 .rightHandForm {
