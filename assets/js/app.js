@@ -30,8 +30,16 @@ document.querySelector("#container").addEventListener("click", function(event) {
       //creating the div element to display the giphy result images
       var giphyDiv = document.createElement("div");
 
-      //initalize the ratings variable for the giphy images
+      //initalize the ratings variable for the giphy images and store them in rating variable
       var rating = item.rating;
+
+      //create an element to display the rating of the image
+      var p = document.createElement("p");
+      //this is where the actual rating shows in the element from the interpolated string
+      p.innerText = `Image Rating: ${rating}`;
+
+      //initialize a variable that will have the img tag that we need
+      var buttonImg = document.createElement("img");
     }
   }
 });
