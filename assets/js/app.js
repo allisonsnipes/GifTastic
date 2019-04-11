@@ -6,7 +6,7 @@ document.querySelector("#container").addEventListener("click", function(event) {
     console.log(event);
 
     //replaces spaces with + signs
-    var buttons = event.target.dataset.button.replace('', '+');
+    var buttons = event.target.dataset.replace(' ', '+');
 
     //constructing search query URL for button name
     var queryURL = `https://api.giphy.com/v1/gifs/search?q="${buttons}&api_key=ZjUY0xPzP6S5TW9QVWkwsTP2dVWs2fkf&limit=20`;
