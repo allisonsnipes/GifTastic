@@ -6,7 +6,7 @@ document.querySelector("#container").addEventListener("click", function(event) {
     console.log(event);
 
     //replaces spaces with + signs
-    var buttons = event.target.dataset.replace(' ', '+');
+    var buttons = event.target.dataset.buttons.replace(' ', '+');
 
     //constructing search query URL for button name
     var queryURL = `https://api.giphy.com/v1/gifs/search?q="${buttons}&api_key=ZjUY0xPzP6S5TW9QVWkwsTP2dVWs2fkf&limit=20`;
@@ -19,11 +19,12 @@ document.querySelector("#container").addEventListener("click", function(event) {
     .then(function(response) {
       return response.json();
     })
+
     //need help/explaination on this part
     .then(function(response) {
       //check up on results
       console.log(queryURL);
-      console.log(response);
+      console.log("im waiting", response);
       //we now use the .then method to save the response again as an itialized results variable (of the data)
       var results = response.data;
 
@@ -53,7 +54,7 @@ document.querySelector("#container").addEventListener("click", function(event) {
           giphyDiv.appendChild(buttonImg);
 
           //prepend the giphyDiv to giphyImgHere div. but first create the container to do so then select where it is to appear in the DOM.
-          let giphyContainer = document.querySelector("#giphyImgHer");
+          let giphyContainer = document.querySelector("#giphyImgHere");
           //insert before new child then the reference child
           giphyContainer.insertBefore(giphyDiv, giphyContainer.firstChild);
         }
