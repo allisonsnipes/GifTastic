@@ -1,0 +1,39 @@
+* {
+  font-family: 'Alegreya Sans', sans-serif;
+  background-color: gainsboro;
+}
+
+.navbar {
+  background-color: salmon;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  float: none;
+}
+
+.top {
+  margin-top: 0em;
+}
+
+.gButton,
+button {
+  background-color: salmon;
+  margin-top: 3em;
+}
+
+.rightHandForm {
+  margin-left: 0em;
+  float: right;
+}
+
+.searchField {
+  background-color: white;
+}

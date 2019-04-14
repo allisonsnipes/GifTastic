@@ -5,8 +5,8 @@ document.querySelector("#container").addEventListener("click", function(event) {
   if (event.target.tagName == "BUTTON") {
     console.log(event);
 
-    //replaces spaces with + signs
-    var buttons = event.target.dataset.buttons.replace(' ', '+');
+    //replaces spaces with '___' with "+"
+    var buttons = event.target.dataset.buttons.replace(" ", "+");
 
     //constructing search query URL for button name
     var queryURL = `https://api.giphy.com/v1/gifs/search?q="${buttons}&api_key=ZjUY0xPzP6S5TW9QVWkwsTP2dVWs2fkf&limit=20`;
@@ -15,6 +15,7 @@ document.querySelector("#container").addEventListener("click", function(event) {
     fetch(queryURL, {
       method: "GET"
     })
+
     //now the data comes back from the API and we use the .then method to return a promise of the JSON returned
     .then(function(response) {
       return response.json();
@@ -60,6 +61,15 @@ document.querySelector("#container").addEventListener("click", function(event) {
         }
       }
     });
+    textGatherInput();
+  }
+
+  //new function for grabbing text inbox
+   function textGatherInput() {
+    document.querySelector("clickMe").addEventListener("click", function(event) {
+      document.getElementById("textBox").val.trim();
+    })
+
   }
 });
-//document.getElementById("textBox").val.trim();
+
