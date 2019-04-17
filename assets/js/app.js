@@ -1,5 +1,5 @@
 //event listener for all button elements on a page
-document.querySelector("#container").addEventListener("click", function(event) {
+document.querySelector("#clickMe").addEventListener("click", function(event) {
 
   //why uppercase?
   if (event.target.tagName == "BUTTON") {
